@@ -35,12 +35,12 @@ data "vsphere_network" "network" {
 
 ## Local OVF/OVA Source
 data "vsphere_ovf_vm_template" "ovfLocal" {
-  name              = "Nested_ESXi8.0u3b_Appliance_Template_v1"
+  name              = var.parameters.ova_name
   disk_provisioning = "thin"
   resource_pool_id  = data.vsphere_compute_cluster.cluster.resource_pool_id
   datastore_id      = data.vsphere_datastore.datastore.id
   host_system_id    = data.vsphere_host.host.id
-  local_ovf_path    = "ova/Nested_ESXi8.0u3c_Appliance_Template_v1.ova"
+  local_ovf_path    = "ova/${var.parameters.ova_name}.ova"
   ovf_network_map = {
     "VM Network" : data.vsphere_network.network.id
   }
