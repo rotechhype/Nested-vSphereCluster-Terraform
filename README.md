@@ -7,3 +7,6 @@ Requirments :
 
 The ESXi host need to be managed by your vCenter and added into a cluster, even if is 1 node cluster.
 
+How to use: 
+
+Clone the repository `git clone https://github.com/rotechhype/Nested-vSphereCluster-Terraform.git`
