@@ -12,6 +12,9 @@ parameters = {
   esxi_host_target          = "ESXI_NAME"
   vsphere_portgroup_target  = "PORTGROUP_NAME"
 
+  # OVA details
+  ova_name   = "OVA_FILE_NAME" # OVA FILENAME WITHOUT THE EXTENSION
+
   #Nested cluster details and hosts details ( cluster and hosts which will be deployed)
   nestedcluster = {
 
