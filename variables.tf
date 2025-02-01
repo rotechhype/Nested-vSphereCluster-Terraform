@@ -9,6 +9,7 @@ variable "parameters" {
     vsphere_cluster_target    = string
     esxi_host_target          = string
     vsphere_portgroup_target  = string
+    ova_name                  = string
     nestedcluster = object({
       nested_cluster_name = string
       esxi_dns            = string
