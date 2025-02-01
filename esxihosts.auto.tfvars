@@ -38,6 +38,23 @@ parameters = {
           }
         }
       }
+      "esxi2" = {
+        esxi_cpu      = "4"     # VIRTUAL ESXI CPUS
+        esxi_ram      = "65536" # VIRTUAL ESXI RAM IN MB  
+        esxi_hostname = "ESXI_HOSTNAME"
+        esxi_ip       = "ESXI_IP"
+        esxi_password = "ESXI_ROOT_PASSWORD "
+        mdisks = { # DISKs AND SIZEs
+          disk1 = {
+            size = 100
+            id   = 1
+          }
+          disk3 = {
+            size = 100
+            id   = 2
+          }
+        }
+      }
     }
   }
 }
